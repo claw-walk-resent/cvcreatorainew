@@ -83,3 +83,7 @@ Disallow: /*.json$
 Disallow: /*.txt$
 Allow: /sitemap.xml
 Allow: /robots.txt
+
+# Explicitly allow sitemap access
+User-agent: Googlebot
+Allow: /sitemap.xml
