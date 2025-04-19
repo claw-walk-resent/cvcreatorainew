@@ -80,7 +80,6 @@ Crawl-delay: 1
 # Block access to specific file types
 User-agent: *
 Disallow: /*.json$
-Disallow: /*.xml$
 Disallow: /*.txt$
 Allow: /sitemap.xml
 Allow: /robots.txt
