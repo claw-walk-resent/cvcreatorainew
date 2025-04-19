@@ -77,13 +77,10 @@ Allow: /contact
 Disallow: /api/
 Crawl-delay: 1
 
-# Block access to specific file types
+# Block access to specific file types while allowing essential files
 User-agent: *
 Disallow: /*.json$
 Disallow: /*.txt$
-Allow: /sitemap.xml
-Allow: /robots.txt
-
-# Explicitly allow sitemap access
-User-agent: Googlebot
-Allow: /sitemap.xml
+Disallow: /*.xml$
+Allow: /sitemap.xml$
+Allow: /robots.txt$
