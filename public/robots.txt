@@ -1,7 +1,38 @@
+# robots.txt for cvcreatorai.netlify.app
+# Block known scrapers and bots
+User-agent: AhrefsBot
+Disallow: /
+User-agent: MJ12bot
+Disallow: /
+User-agent: SEMrushBot
+Disallow: /
+User-agent: Baiduspider
+Disallow: /
+User-agent: YandexBot
+Disallow: /
+User-agent: BLEXBot
+Disallow: /
+User-agent: dotbot
+Disallow: /
+
+# Block specific directories and files for all user agents
 User-agent: *
-Disallow: /search
-Disallow: /category/
-Disallow: /tag/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /noindex/
+
+# Allow crawling of all other content
 Allow: /
+
+# Allow all pages for Googlebot, Bingbot, and other legitimate search engines
+User-agent: Googlebot
+Disallow:
+User-agent: Bingbot
+Disallow:
+
+# Block all other bots by default
+User-agent: *
+Disallow: /
+
+# Sitemap location
 Sitemap: https://cvcreatorai.netlify.app/sitemap.xml
-Sitemap: https://cvcreatorai.netlify.app/sitemap-pages.xml
