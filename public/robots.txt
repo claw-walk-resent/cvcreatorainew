@@ -6,7 +6,7 @@ Allow: /contact
 Allow: /privacy
 Allow: /terms
 Disallow: /api/
-Sitemap: https://cvcreatorai.netlify.app/sitemap.xml
+Sitemap: https://cvcreatorai.netlify.app/sitemap_new.xml
 
 User-agent: Googlebot-Image
 Allow: /
@@ -81,6 +81,5 @@ Crawl-delay: 1
 User-agent: *
 Disallow: /*.json$
 Disallow: /*.txt$
-Disallow: /*.xml$
-Allow: /sitemap.xml$
-Allow: /robots.txt$
+Allow: /sitemap_new.xml
+Allow: /robots.txt
