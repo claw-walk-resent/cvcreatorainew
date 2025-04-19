@@ -1,14 +1,86 @@
 User-agent: Googlebot
 Allow: /
+Allow: /editor
+Allow: /about
+Allow: /contact
+Allow: /privacy
+Allow: /terms
+Disallow: /api/
+Sitemap: https://cvcreatorai.netlify.app/sitemap.xml
+
+User-agent: Googlebot-Image
+Allow: /
+Allow: /assets/
+Allow: /images/
+
+User-agent: Googlebot-Mobile
+Allow: /
+Allow: /editor
+Allow: /about
+Allow: /contact
 
 User-agent: Bingbot
 Allow: /
+Allow: /editor
+Allow: /about
+Allow: /contact
+Disallow: /api/
+
+User-agent: Slurp
+Allow: /
+Allow: /editor
+Allow: /about
+Allow: /contact
+Disallow: /api/
+
+User-agent: DuckDuckBot
+Allow: /
+Allow: /editor
+Allow: /about
+Allow: /contact
+Disallow: /api/
+
+User-agent: Baiduspider
+Allow: /
+Allow: /editor
+Allow: /about
+Allow: /contact
+Disallow: /api/
+
+User-agent: YandexBot
+Allow: /
+Allow: /editor
+Allow: /about
+Allow: /contact
+Disallow: /api/
 
 User-agent: Twitterbot
 Allow: /
+Allow: /assets/
+Allow: /images/
 
 User-agent: facebookexternalhit
 Allow: /
+Allow: /assets/
+Allow: /images/
+
+User-agent: LinkedInBot
+Allow: /
+Allow: /assets/
+Allow: /images/
 
 User-agent: *
 Allow: /
+Allow: /editor
+Allow: /about
+Allow: /contact
+Disallow: /api/
+Crawl-delay: 1
+
+# Block access to specific file types
+User-agent: *
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /*.txt$
+Allow: /sitemap.xml
+Allow: /robots.txt
